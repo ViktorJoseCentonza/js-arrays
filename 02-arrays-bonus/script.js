@@ -57,6 +57,7 @@ console.log(`removing Ed differently ${teachers}`);
 console.log("N4---------------------------------------------------------------------------------------");
 
 //teachers.splice(teachers.indexOf("Fabio"), 1) //uncomment to check if functioning
+console.log("is Fabio present in the array?");
 
 if (teachers.indexOf("Fabio") == -1) {
   isFabioPresent = false;
