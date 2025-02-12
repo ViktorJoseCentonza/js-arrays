@@ -10,11 +10,16 @@ const teachers = [
 
 // 1. Utilizzando un indice sull'array teachers, cambia il valore della
 // variabile fourthTeacher qui sotto in modo che sia il quarto insegnante elencato nell'array
+console.log("N1------------------------------------------------------------------------------------");
 const fourthTeacher = teachers[3];
 console.log(fourthTeacher);
 
+console.log("N2---------------------------------------------------------------------------------------");
 
 // 2. Sostituisci il quinto insegnante nell'array teachers con 'Patrick'
+console.log(`before changing: ${teachers[4]}`);
+teachers[4] = "Patrick"
+console.log(`after changing: ${teachers[4]}`);
 
 // 3. Rimuovi l'ultimo insegnante dall'array e salvalo nella variabile lastTeacher qui sotto
 const lastTeacher = null;
