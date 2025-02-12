@@ -43,9 +43,28 @@ console.log(teachers);
 // 7. Trova l'indice dell'insegnante 'Lewis' nell'array teachers
 // e salvalo nella variabile lewisIndex
 console.log("N7---------------------------------------------------------------------------------------");
-const lewisIndex = null;
+const lewisIndex = teachers.indexOf("Lewis");
+console.log(lewisIndex);
 
 // 8. Verifica se l'array teachers è vuoto
 // e salva il risultato nella variabile isTeachersEmpty
 console.log("N8---------------------------------------------------------------------------------------");
-const isTeachersEmpty = null;
+//comment from here
+///*
+const initial_array_length = teachers.length; //support variable to avoid .shift() lowering.lenght mid-cycle
+for (let i = 0; i < initial_array_length; i++) {
+  console.log(`${teachers.length} elements remaining`);
+  teachers.shift();
+}
+console.log(`all elements of teachers removed`);
+//*/
+// to here to see behavior without empty string
+if (teachers.length == 0) {
+  const isTeachersEmpty = true;
+  console.log(`isTeacherEmpty is ${isTeachersEmpty}`);
+
+} else {
+  const isTeachersEmpty = false;
+  console.log(`isTeacherEmpty is ${isTeachersEmpty}`);
+}
+
