@@ -34,11 +34,37 @@ console.log(`the names longer than 4 are: ${longNames}`);
 // 3. Rimuovi 'Ed' dall'array teachers
 console.log("N3---------------------------------------------------------------------------------------");
 
+console.log(`before removing Ed ${teachers}`);
+for (let i = 0; i < teachers.length; i++) {
+
+  if (teachers[i] == "Ed") {
+    teachers.splice(i, 1); //remove the item at i and stop removing
+  }
+}
+
+console.log(`after removing Ed ${teachers}`);
+
+teachers.unshift("Ed");
+
+console.log(`readding Ed ${teachers}`);
+
+teachers.splice(teachers.indexOf("Ed"), 1) //removes only the first Ed it finds (must be looped to remove all)
+
+console.log(`removing Ed differently ${teachers}`);
+
 // 4. Verifica se 'Fabio' è presente nell'array teachers
 // e salva il risultato nella variabile isFabioPresent
 console.log("N4---------------------------------------------------------------------------------------");
 
-const isFabioPresent = null;
+//teachers.splice(teachers.indexOf("Fabio"), 1) //uncomment to check if functioning
+
+if (teachers.indexOf("Fabio") == -1) {
+  isFabioPresent = false;
+  console.log(isFabioPresent);
+} else {
+  isFabioPresent = true;
+  console.log(isFabioPresent);
+}
 
 // 5. Unisci tutti gli insegnanti nell'array teachers in una stringa  separata da virgole e salvala nella variabile teachersString
 console.log("N5---------------------------------------------------------------------------------------");
