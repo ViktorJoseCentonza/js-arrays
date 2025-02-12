@@ -69,4 +69,15 @@ if (teachers.indexOf("Fabio") == -1) {
 // 5. Unisci tutti gli insegnanti nell'array teachers in una stringa  separata da virgole e salvala nella variabile teachersString
 console.log("N5---------------------------------------------------------------------------------------");
 
-const teachersString = null;
+//let method
+/*
+let teachersString =[];
+for (let i = 0; i < teachers.length; i++) {
+  teachersString = teachersString + teachers[i]+",";
+  console.log(`${teachersString}`);
+}
+*/
+//const method
+const teachersString = teachers.join();
+console.log(teachersString);
+
